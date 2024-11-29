@@ -1,16 +1,34 @@
-# product_catalogue_flutter
+# Flutter Food Store
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+A simple Flutter mobile application demonstrating a food store with theme switching and product grid display.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Grid view of food products
+- Dark/Light theme toggle
+- Interactive product cards
+- Network image loading
+- Responsive design
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Prerequisites
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK installed on your system.
+- Android Studio or Xcode for running the app on Android/iOS simulators/emulators.
+
+## Installation
+
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/uwituzeb/state_management_flutter.git`
+   cd state_management_flutter
+   ```
+
+2. **Install Dependencies**
+`flutter pub get`
+
+3. **Run the app**
+`flutter run`
+
+

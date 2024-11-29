@@ -1,3 +1,5 @@
+//Product interface
+
 class Product {
   final String name;
   final String imageUrl;

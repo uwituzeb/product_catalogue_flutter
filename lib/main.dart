@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   // Set initial theme to light
   bool isDarkMode = false;
 
-  // List of products
+  // List of products to display in catalog
   final List<Product> products = [
     Product(
       name: "Pizza",
@@ -47,8 +47,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Store',
+      // Switches between dark and light themes
       theme: isDarkMode ? MyThemes.dark : MyThemes.light,
       home: CatalogPage(
+        // toggles theme when button clicked
         toggleTheme: () {
           setState(() {
             isDarkMode = !isDarkMode;
@@ -85,14 +87,14 @@ class CatalogPage extends StatelessWidget {
       ),
       body: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+          crossAxisCount: 1, //display products in grid
         ),
         itemCount: products.length,
         itemBuilder: (context, index) {
           final product = products[index];
           return GestureDetector(
             onTap: () {
-              // Diplay dialog name
+              // Diplay dialogwith product details when tapped
               showDialog(
                 context: context,
                 builder: (context) => AlertDialog(
