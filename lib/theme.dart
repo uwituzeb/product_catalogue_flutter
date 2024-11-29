@@ -5,7 +5,7 @@ class MyThemes {
   static final ThemeData light = ThemeData(
     primaryColor: Colors.pink,
     brightness: Brightness.light,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       backgroundColor: Colors.pink,
     ),
   );
@@ -14,7 +14,7 @@ class MyThemes {
   static final ThemeData dark = ThemeData(
     primaryColor: Colors.black,
     brightness: Brightness.dark,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       backgroundColor: Colors.black,
     ),
   );
